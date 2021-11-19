@@ -1,17 +1,22 @@
+import { useNavigation } from "@react-navigation/native";
 import * as React from "react";
-import { StyleSheet } from "react-native";
+import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import Sections from "../components/Sections";
-import { Text, View } from "../components/Themed";
+import Colors from "../constants/Colors";
 
-export default function TabOneScreen() {
+export default function HomeScreen() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <SafeAreaView>
-        <Text style={styles.title}>Tab One</Text>
-        <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)"/>
-        <Sections title="Acerca de mí" FontAwesome5Icon="user-alt" />
+        <Image style={styles.photo} source={{uri: "https://avatars.githubusercontent.com/u/73290423?v=4"}}
+        />
+        <TouchableOpacity onPress={() => navigation.navigate("AboutMe")}>
+          <Sections title="Acerca de mí" FontAwesome5Icon="user-alt" />
+        </TouchableOpacity>
+
         <Sections title="Formación" FontAwesome5Icon="book" />
         <Sections title="Skills" FontAwesome5Icon="fighter-jet" />
         <Sections title="Trabajos realizados" FontAwesome5Icon="laptop-code" />
@@ -24,15 +29,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: "#2A2438",
+    backgroundColor: Colors.palette.background,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
+  photo: {
+    height: 50,
+    width: 50,
+    borderRadius: 50,
+    marginVertical: 10,
+    marginHorizontal: 20,
   },
 });

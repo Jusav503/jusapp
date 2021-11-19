@@ -1,6 +1,8 @@
 import { FontAwesome5 } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import Colors from "../constants/Colors";
 
 interface SectionProps {
   title: string;
@@ -8,13 +10,14 @@ interface SectionProps {
 }
 
 const Sections = (props: SectionProps) => {
+
   return (
-    <TouchableOpacity style={styles.container}>
-      <View style={styles.imageContainer}>
-        <FontAwesome5 name={props.FontAwesome5Icon} size={20} color="#DBD8E3" />
+    <View style={styles.container} >
+      <View style={styles.iconContainer}>
+        <FontAwesome5 name={props.FontAwesome5Icon} size={20} color={Colors.palette.text} />
       </View>
       <Text style={styles.title}>{props.title}</Text>
-    </TouchableOpacity>
+    </View>
   );
 };
 
@@ -25,11 +28,11 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 60,
     marginTop: 20,
-    backgroundColor: "#5C5470",
+    backgroundColor: Colors.palette.componentBackground,
     flexDirection: "row",
     alignItems: "center",
     borderRadius: 10,
   },
-  imageContainer: { flex: 1, alignItems: "center" },
-  title: { flex: 2, fontSize: 25, color: "#DBD8E3", fontWeight: "bold" },
+  iconContainer: { flex: 1, alignItems: "center" },
+  title: { flex: 2, fontSize: 25, color: Colors.palette.text, fontWeight: "bold" },
 });
