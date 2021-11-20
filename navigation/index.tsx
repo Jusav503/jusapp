@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import Colors from '../constants/Colors'
 import * as React from "react";
 
 import AboutMeScreen from "../screens/AboutMeScreen";
@@ -12,7 +13,7 @@ const RootNavigator = () => {
       <Stack.Navigator
         initialRouteName="HomeScreen"
         screenOptions={{
-          headerStyle: { backgroundColor: "#2A2438" },
+          headerStyle: { backgroundColor: Colors.palette.background },
           headerTintColor: "#fff",
           headerTitle: "",
           headerShadowVisible: false
