@@ -3,8 +3,11 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Colors from '../constants/Colors'
 import * as React from "react";
 
-import AboutMeScreen from "../screens/AboutMeScreen";
 import HomeScreen from "../screens/HomeScreen";
+import EducationScreen from "../screens/EducationScreen";
+import SkillsScreen from "../screens/SkillsScreen";
+import AboutMeScreen from "../screens/AboutMeScreen";
+import ExperienceScreen from "../screens/ExperienceScreen";
 
 const Stack = createStackNavigator();
 const RootNavigator = () => {
@@ -25,6 +28,9 @@ const RootNavigator = () => {
           options={{ headerShown: false }}
         />
         <Stack.Screen component={AboutMeScreen} name="AboutMe" />
+        <Stack.Screen component={EducationScreen} name="Education" />
+        <Stack.Screen component={SkillsScreen} name="Skills" />
+        <Stack.Screen component={ExperienceScreen} name="Experience" />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -9,6 +9,6 @@ export default {
   cardPalette:{
     text: "white",
     backgroundScreen: "#2B2B2B",
-    componentBackground: "black",
+    componentBackground: "#E94560",
   }
 };

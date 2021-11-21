@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
   },
-  cardAvatar:{width:40, height:40, borderRadius:50, marginHorizontal:7},
+  cardAvatar: { width: 40, height: 40, borderRadius: 50, marginHorizontal: 7 },
   nameHeader: {
     color: Colors.cardPalette.text,
     fontWeight: "bold",
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
   aboutScreen: {
     color: Colors.cardPalette.text,
-    fontSize: 10
+    fontSize: 10,
   },
   text: { color: Colors.cardPalette.text, fontSize: 14, marginVertical: 10 },
   image: {

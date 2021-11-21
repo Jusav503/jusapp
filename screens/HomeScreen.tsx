@@ -26,9 +26,17 @@ export default function HomeScreen() {
           <Sections title="Acerca de mí" FontAwesome5Icon="user-alt" />
         </TouchableOpacity>
 
-        <Sections title="Formación" FontAwesome5Icon="book" />
-        <Sections title="Skills" FontAwesome5Icon="fighter-jet" />
-        <Sections title="Trabajos realizados" FontAwesome5Icon="laptop-code" />
+        <TouchableOpacity onPress={() => navigation.navigate("Education")} >
+          <Sections title="Formaciones y certificados" FontAwesome5Icon="book" />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate("Skills")}>
+          <Sections title="Skills" FontAwesome5Icon="fighter-jet" />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate("Experience")}>
+          <Sections title="Proyectos realizados" FontAwesome5Icon="laptop-code" />
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

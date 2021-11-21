@@ -34,5 +34,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   iconContainer: { flex: 1, alignItems: "center" },
-  title: { flex: 2, fontSize: 25, color: Colors.homePalette.componentTitle, fontWeight: "bold" },
+  title: { flex: 3, fontSize: 25, color: Colors.homePalette.componentTitle, fontWeight: "bold" },
 });
