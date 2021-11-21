@@ -13,7 +13,7 @@ const RootNavigator = () => {
       <Stack.Navigator
         initialRouteName="HomeScreen"
         screenOptions={{
-          headerStyle: { backgroundColor: Colors.palette.background },
+          headerStyle: { backgroundColor: Colors.cardPalette.backgroundScreen },
           headerTintColor: "#fff",
           headerTitle: "",
           headerShadowVisible: false

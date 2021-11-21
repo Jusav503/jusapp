@@ -7,11 +7,18 @@ const AboutMeScreen = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.cardContainer}>
+        <View style={{flexDirection:"row"}}>
+          <Image source={require("../assets/images/foto.jpg")} style={styles.cardAvatar} />
+          <View>
+            <Text style={styles.nameHeader}>Jusav</Text>
+            <Text style={styles.aboutScreen}>Acerca de mi</Text>
+          </View>
+        </View>
         <Image
           source={require("../assets/images/foto.jpg")}
           style={styles.image}
         />
-        <View style={styles.textContainer}>
+        <View>
           <Text style={styles.text}>
             Esta es para mi, una oportunidad única de poner en práctica todo lo
             aprendido durante los meses de estudio y formación. {"\n"} La
