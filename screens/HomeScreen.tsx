@@ -1,17 +1,11 @@
 import { useNavigation } from "@react-navigation/native";
 import * as React from "react";
-import {
-  Image,
-  ImageBackground,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Image, StyleSheet, TouchableOpacity, View,} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { LinearGradient } from "expo-linear-gradient";
 
+import Colors from '../constants/Colors'
 import Sections from "../components/Sections";
-import Colors from "../constants/Colors";
+
 
 export default function HomeScreen() {
   const navigation = useNavigation();
@@ -43,7 +37,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#2B2B2B",
+    backgroundColor: Colors.homePalette.background,
   },
   headerContainer: {
     flex: 1,

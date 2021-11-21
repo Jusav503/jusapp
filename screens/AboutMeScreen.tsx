@@ -1,23 +1,48 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Colors from '../constants/Colors'
+import React from "react";
+import { Image, ScrollView, Text, View } from "react-native";
+
+import styles from "./styles";
 
 const AboutMeScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>About Me!</Text>
-    </View>
-  )
-}
+    <ScrollView style={styles.container}>
+      <View style={styles.cardContainer}>
+        <Image
+          source={require("../assets/images/foto.jpg")}
+          style={styles.image}
+        />
+        <View style={styles.textContainer}>
+          <Text style={styles.text}>
+            Esta es para mi, una oportunidad única de poner en práctica todo lo
+            aprendido durante los meses de estudio y formación. {"\n"} La
+            juventud es un grado en cuanto a rapidez de aprendizaje y
+            asimilación de tareas. Esta es para mi, una oportunidad única de
+            poner en práctica todo lo aprendido durante los meses de estudio y
+            formación. La juventud es un grado en cuanto a rapidez de
+            aprendizaje y asimilación de tareas.
+          </Text>
+          <Text style={styles.text}>
+            Esta es para mi, una oportunidad única de poner en práctica todo lo
+            aprendido durante los meses de estudio y formación. {"\n"} La
+            juventud es un grado en cuanto a rapidez de aprendizaje y
+            asimilación de tareas. Esta es para mi, una oportunidad única de
+            poner en práctica todo lo aprendido durante los meses de estudio y
+            formación. La juventud es un grado en cuanto a rapidez de
+            aprendizaje y asimilación de tareas.
+          </Text>
+          <Text style={styles.text}>
+            Esta es para mi, una oportunidad única de poner en práctica todo lo
+            aprendido durante los meses de estudio y formación. {"\n"} La
+            juventud es un grado en cuanto a rapidez de aprendizaje y
+            asimilación de tareas. Esta es para mi, una oportunidad única de
+            poner en práctica todo lo aprendido durante los meses de estudio y
+            formación. La juventud es un grado en cuanto a rapidez de
+            aprendizaje y asimilación de tareas.
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+  );
+};
 
-export default AboutMeScreen
-
-const styles = StyleSheet.create({
-    container:{
-    flex:1, 
-    justifyContent:"center",
-    alignItems:"center",
-    padding: 10,
-    backgroundColor: Colors.palette.background,
-  }
-})
+export default AboutMeScreen;
