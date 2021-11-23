@@ -25,10 +25,9 @@ const styles = StyleSheet.create({
   text: { color: Colors.cardPalette.text, fontSize: 14, marginVertical: 10 },
   image: {
     width: "100%",
-    height: 270,
+    height: 200,
     borderRadius: 10,
     resizeMode: "contain",
-    marginBottom: 10,
   },
 });
 
