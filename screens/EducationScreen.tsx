@@ -14,37 +14,26 @@ const EducationScreen = () => {
             <Text style={styles.aboutScreen}>Formaciones y certificados</Text>
           </View>
         </View>
-        <Image
-          source={require("../assets/images/foto.jpg")}
-          style={styles.image}
-        />
+        <Image source={require("../assets/images/formacion.jpeg")} style={styles.image} />
         <View>
           <Text style={styles.text}>
-            Esta es para mi, una oportunidad única de poner en práctica todo lo
-            aprendido durante los meses de estudio y formación. {"\n"} La
-            juventud es un grado en cuanto a rapidez de aprendizaje y
-            asimilación de tareas. Esta es para mi, una oportunidad única de
-            poner en práctica todo lo aprendido durante los meses de estudio y
-            formación. La juventud es un grado en cuanto a rapidez de
-            aprendizaje y asimilación de tareas.
+            Técnico de programación e implementación de E-Commerce, webs y aplicaciones de venta. realizado desde Octubre 2020 hasta mayo 2021 finalicé dicha formación realizando práticas laborales en una agencia de marketing y desarrollo de aplicaciones a medida. Con una duración de 30 dias.
           </Text>
+        </View>
+      </View>
+
+      <View style={styles.cardContainer}>
+        <View style={{flexDirection:"row"}}>
+          <Image source={require("../assets/images/foto.jpg")} style={styles.cardAvatar} />
+          <View>
+            <Text style={styles.nameHeader}>Jusav</Text>
+            <Text style={styles.aboutScreen}>Formaciones y certificados</Text>
+          </View>
+        </View>
+        <Image source={require("../assets/images/certificado.png")} style={styles.image} />
+        <View>
           <Text style={styles.text}>
-            Esta es para mi, una oportunidad única de poner en práctica todo lo
-            aprendido durante los meses de estudio y formación. {"\n"} La
-            juventud es un grado en cuanto a rapidez de aprendizaje y
-            asimilación de tareas. Esta es para mi, una oportunidad única de
-            poner en práctica todo lo aprendido durante los meses de estudio y
-            formación. La juventud es un grado en cuanto a rapidez de
-            aprendizaje y asimilación de tareas.
-          </Text>
-          <Text style={styles.text}>
-            Esta es para mi, una oportunidad única de poner en práctica todo lo
-            aprendido durante los meses de estudio y formación. {"\n"} La
-            juventud es un grado en cuanto a rapidez de aprendizaje y
-            asimilación de tareas. Esta es para mi, una oportunidad única de
-            poner en práctica todo lo aprendido durante los meses de estudio y
-            formación. La juventud es un grado en cuanto a rapidez de
-            aprendizaje y asimilación de tareas.
+            Curso de programación de E-Commerce en Laravel. Realizado desde junio 2021 hasta agosto 2021 en la plataforma de cursos online Udemy.
           </Text>
         </View>
       </View>

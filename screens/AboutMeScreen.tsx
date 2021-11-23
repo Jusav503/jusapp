@@ -17,10 +17,7 @@ const AboutMeScreen = () => {
             <Text style={styles.aboutScreen}>Acerca de mi</Text>
           </View>
         </View>
-        <Image
-          source={require("../assets/images/aboutme.jpg")}
-          style={styles.image}
-        />
+        <Image source={require("../assets/images/aboutme.jpg")} style={styles.image}/>
         <View>
           <Text style={styles.text}>
             ¡Hey! Soy Justice Velasco, nací el 28 de agosto del 2002 en San
@@ -43,13 +40,10 @@ const AboutMeScreen = () => {
             <Text style={styles.aboutScreen}>Acerca de mi</Text>
           </View>
         </View>
-        <Image
-          source={require("../assets/images/formacion.jpeg")}
-          style={styles.image}
-        />
+        <Image source={require("../assets/images/formacion.jpeg")} style={styles.image} />
         <View>
           <Text style={styles.text}>
-            A los 17 años entré a un curso de programación y desarrollo de
+            A los 17 años entré a una formación de programación y desarrollo de
             aplicaciones web, aprendí muchas de las tecnologías que se usan en
             el día a día de los programadores, también aprendí a como
             planificar, organizarme, desarrollar y monitorear los proyectos
@@ -69,10 +63,7 @@ const AboutMeScreen = () => {
             <Text style={styles.aboutScreen}>Acerca de mi</Text>
           </View>
         </View>
-        <Image
-          source={require("../assets/images/project.jpg")}
-          style={styles.image}
-        />
+        <Image source={require("../assets/images/project.jpg")} style={styles.image} />
         <View>
           <Text style={styles.text}>
             Este pequeño proyecto creado con React Native y expo es para mi, una
