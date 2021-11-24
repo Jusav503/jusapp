@@ -29,6 +29,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     resizeMode: "contain",
   },
+  media: {
+    width: "100%",
+    height: 300
+  },
 });
 
 export default styles;
