@@ -50,19 +50,15 @@ const ExperienceScreen = () => {
             <Text style={styles.aboutScreen}>Projectos Realizados</Text>
           </View>
         </View>
-        <Video
-          ref={video}
-          style={styles.media}
-          source={require("../assets/videos/timelapse.mp4")}
-          resizeMode="contain"
-          isLooping
-          shouldPlay
-        />
+        
         <Text style={styles.text}>
-          Hello
+          He realizado "features" como algunas aplicaciones en el mundo del internet, por ejemplo: likes dinamicos como los de Twitter, el poder mostrar listas de reproducción (almacenadas en AWS amplify) reproducir y pausar una canción como en Spotify... También he realizado una amplia replica de UI y algunas "features" de algunas aplicaciones tales como: Netflix, la web de Tesla, WhatsApp, Amazon y TikTok.
         </Text>
         <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")}>
-          <FontAwesome name="github" size={24} color="white" />
+          <View style={styles.buttonContainer}>
+            <FontAwesome name="github" size={24} color="white" />
+            <Text style={{color:"white", fontWeight: "bold", marginHorizontal: 10}}>Jusav503</Text>
+          </View>
         </TouchableOpacity>
       </View>
     </ScrollView>
