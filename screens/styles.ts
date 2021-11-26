@@ -33,14 +33,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 300
   },
-  buttonContainer: {
-    flexDirection: "row",
-    backgroundColor: "#171B22",
-    width:"100%",
-    padding: 10,
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius:10}
 });
 
 export default styles;

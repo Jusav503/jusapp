@@ -3,6 +3,7 @@ import { Video } from "expo-av";
 import { openURL } from "expo-linking";
 import React from "react";
 import { Image, ScrollView, Text, View, TouchableOpacity } from "react-native";
+import MyButton from "../components/MyButton";
 
 import styles from "./styles";
 
@@ -55,10 +56,7 @@ const ExperienceScreen = () => {
           He realizado "features" como algunas aplicaciones en el mundo del internet, por ejemplo: likes dinamicos como los de Twitter, el poder mostrar listas de reproducción (almacenadas en AWS amplify) reproducir y pausar una canción como en Spotify... También he realizado una amplia replica de UI y algunas "features" de algunas aplicaciones tales como: Netflix, la web de Tesla, WhatsApp, Amazon y TikTok.
         </Text>
         <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")}>
-          <View style={styles.buttonContainer}>
-            <FontAwesome name="github" size={24} color="white" />
-            <Text style={{color:"white", fontWeight: "bold", marginHorizontal: 10}}>Jusav503</Text>
-          </View>
+          <MyButton FontAwesomeIcon="github" colorIcon="white" title="Jusav503" colorTitle="white" backgroundColor="#171B22" />
         </TouchableOpacity>
       </View>
     </ScrollView>
