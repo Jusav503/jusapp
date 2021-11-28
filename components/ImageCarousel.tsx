@@ -33,8 +33,11 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
         snapToInterval={windowWidth - 20}
         snapToAlignment={"center"}
         decelerationRate={"fast"}
+        
+        // Dots
         viewabilityConfig={{viewAreaCoveragePercentThreshold: 50}}
         onViewableItemsChanged={onFlatListUpdate}
+        
         />
         <View style={styles.dots}>
           {images.map((image, index) => (
