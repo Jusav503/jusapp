@@ -18,15 +18,16 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
     }
   }, [])
   return (
-    <View style={styles.container}>
+    <View>
       <FlatList
         data={images}
         renderItem={({item}) => (
           <Image
-            style={[styles.images, { width: windowWidth - 40 }]}
+            style={[styles.images, { width: windowWidth - 25 }]}
             source={{ uri: item }}
           />
         )}
+        keyExtractor={item=>item}
         horizontal
         showsHorizontalScrollIndicator={false}
         snapToInterval={windowWidth - 20}
@@ -40,7 +41,7 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
             <View
               style={[
                 styles.dot,
-                { backgroundColor: index == activeIndex ? '#c9c9c9' : '#ededed' }
+                { backgroundColor: index == activeIndex ? 'white' : 'black' }
               ]}
             />
           ))}
@@ -50,10 +51,9 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {}, 
   images: {
-    margin: 10,
-    height: 250,
+    width:250,
+    height: 450,
     resizeMode: "contain",
   },
   dots:{

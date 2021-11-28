@@ -5,7 +5,7 @@ import { Image, ScrollView, Text, View, TouchableOpacity } from "react-native";
 
 import ImageCarousel from "../components/ImageCarousel";
 import MyButton from "../components/MyButton";
-import images from "../data/images";
+import experienceImages  from "../data/experienceImages"
 import styles from "./styles";
 
 const ExperienceScreen = () => {
@@ -52,7 +52,7 @@ const ExperienceScreen = () => {
             <Text style={styles.aboutScreen}>Projectos Realizados</Text>
           </View>
         </View>
-        <ImageCarousel images={images.experienceImages} />
+        <ImageCarousel images={experienceImages.images} />
         <Text style={styles.text}>
           He realizado "features" como las de algunas aplicaciones móviles, por ejemplo: likes dinamicos como los de Twitter o TikTok, el poder
           mostrar listas de reproducción (almacenadas en AWS amplify) reproducir o pausar una canción, mostrar la barra de progreso de la canción como en Spotify... También he realizado una amplia replica de UI's de algunas aplicaciones tales como: Netflix, Tesla, WhatsApp, Amazon y TikTok.
