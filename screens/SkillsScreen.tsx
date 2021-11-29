@@ -1,7 +1,9 @@
+import { openURL } from "expo-linking";
 import React from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 
 import styles from "./styles";
+import MyButton from "../components/MyButton";
 
 const SkillsScreen = () => {
   return (
@@ -15,37 +17,30 @@ const SkillsScreen = () => {
           </View>
         </View>
         <Image
-          source={require("../assets/images/foto.jpg")}
+          source={require("../assets/images/laptop.jpg")}
           style={styles.image}
         />
         <View>
           <Text style={styles.text}>
-            Esta es para mi, una oportunidad única de poner en práctica todo lo
-            aprendido durante los meses de estudio y formación. {"\n"} La
-            juventud es un grado en cuanto a rapidez de aprendizaje y
-            asimilación de tareas. Esta es para mi, una oportunidad única de
-            poner en práctica todo lo aprendido durante los meses de estudio y
-            formación. La juventud es un grado en cuanto a rapidez de
-            aprendizaje y asimilación de tareas.
+            Una de las habilidades que me destacan es el ser una persona proactiva, demostrado en la formación que realicé para técnico programación e implementación de E-Commerce, webs y aplicaciones de venta. A pesar que llevo una corta trayectoria en el mundo de la programación me veo muy motivado y con ganas de seguir aprendiendo, ya sea por medio de formaciones o por mi propia cuenta.
           </Text>
+        </View>
+      </View>
+      <View style={styles.cardContainer}>
+        <View style={{flexDirection:"row"}}>
+          <Image source={{uri: "https://media-exp1.licdn.com/dms/image/C4D03AQGOJEDGFZpuCg/profile-displayphoto-shrink_800_800/0/1516867329561?e=1643846400&v=beta&t=S83-svgl-R0PzBFL6LCMqHvb9QPDTEsmHe89j0pp_pA"}} style={styles.cardAvatar} />
+          <View>
+            <Text style={styles.nameHeader}>Edgar Costilla</Text>
+            <Text style={styles.aboutScreen}>Formador</Text>
+          </View>
+        </View>
+        <View>
           <Text style={styles.text}>
-            Esta es para mi, una oportunidad única de poner en práctica todo lo
-            aprendido durante los meses de estudio y formación. {"\n"} La
-            juventud es un grado en cuanto a rapidez de aprendizaje y
-            asimilación de tareas. Esta es para mi, una oportunidad única de
-            poner en práctica todo lo aprendido durante los meses de estudio y
-            formación. La juventud es un grado en cuanto a rapidez de
-            aprendizaje y asimilación de tareas.
+            "Justice es una persona que le encanta este mundillo, a pesar de la edad que tiene sus ganas por aprender son increíbles"
           </Text>
-          <Text style={styles.text}>
-            Esta es para mi, una oportunidad única de poner en práctica todo lo
-            aprendido durante los meses de estudio y formación. {"\n"} La
-            juventud es un grado en cuanto a rapidez de aprendizaje y
-            asimilación de tareas. Esta es para mi, una oportunidad única de
-            poner en práctica todo lo aprendido durante los meses de estudio y
-            formación. La juventud es un grado en cuanto a rapidez de
-            aprendizaje y asimilación de tareas.
-          </Text>
+          <TouchableOpacity onPress={() => openURL("https://www.linkedin.com/in/edgarcostilla/")}>
+            <MyButton title="Edgar Costilla" colorTitle="white" FontAwesomeIcon="linkedin-square" colorIcon="white" backgroundColor="#0A66C2" />
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
