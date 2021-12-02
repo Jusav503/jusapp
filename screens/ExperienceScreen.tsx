@@ -67,6 +67,32 @@ const ExperienceScreen = () => {
           />
         </TouchableOpacity>
       </View>
+
+      <View style={styles.cardContainer}>
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            source={require("../assets/images/foto.jpg")}
+            style={styles.cardAvatar}
+          />
+          <View>
+            <Text style={styles.nameHeader}>Jusav</Text>
+            <Text style={styles.aboutScreen}>Projectos Realizados</Text>
+          </View>
+        </View>
+        <Image style={styles.image} source={{uri : "https://jusapp.s3.eu-central-1.amazonaws.com/tictactoe.jpg"}} />
+        <Text style={styles.text}>
+          Creación del juego Tic-tac-toe, usando el metodo "map()" para posicionar las equis y circulos. 
+        </Text>
+        <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
+          <MyButton
+            FontAwesomeIcon="github"
+            colorIcon="white"
+            title="Jusav503"
+            colorTitle="white"
+            backgroundColor="#171B22"
+          />
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
