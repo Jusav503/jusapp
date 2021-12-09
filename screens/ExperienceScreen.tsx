@@ -5,7 +5,7 @@ import { Image, ScrollView, Text, View, TouchableOpacity } from "react-native";
 
 import ImageCarousel from "../components/ImageCarousel";
 import MyButton from "../components/MyButton";
-import experienceImages  from "../data/experienceImages"
+import images  from "../data/images"
 import styles from "./styles";
 
 const ExperienceScreen = () => {
@@ -52,7 +52,7 @@ const ExperienceScreen = () => {
             <Text style={styles.aboutScreen}>Projectos Realizados</Text>
           </View>
         </View>
-        <ImageCarousel images={experienceImages.images} />
+        <ImageCarousel images={images.features} />
         <Text style={styles.text}>
           He realizado "features" como las de algunas aplicaciones móviles, por ejemplo: likes dinamicos como los de Twitter o TikTok, el poder
           mostrar listas de reproducción (almacenadas en AWS amplify) reproducir o pausar una canción, mostrar la barra de progreso de la canción como en Spotify... También he realizado una amplia replica de UI's de algunas aplicaciones tales como: Netflix, Tesla, WhatsApp, Amazon y TikTok.
@@ -82,6 +82,32 @@ const ExperienceScreen = () => {
         <Image style={styles.image} source={{uri : "https://jusapp.s3.eu-central-1.amazonaws.com/tictactoe.jpg"}} />
         <Text style={styles.text}>
           Creación del juego Tic-tac-toe, usando el metodo "map()" para posicionar las equis y circulos. 
+        </Text>
+        <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
+          <MyButton
+            FontAwesomeIcon="github"
+            colorIcon="white"
+            title="Jusav503"
+            colorTitle="white"
+            backgroundColor="#171B22"
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.cardContainer}>
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            source={require("../assets/images/foto.jpg")}
+            style={styles.cardAvatar}
+          />
+          <View>
+            <Text style={styles.nameHeader}>Jusav</Text>
+            <Text style={styles.aboutScreen}>Projectos Realizados</Text>
+          </View>
+        </View>
+        <ImageCarousel images={images.jusavcoin} />
+        <Text style={styles.text}>
+          Uso de API "Coingecko" para mostrar nombre de las criptomonedas, precio, gráfica entre otras cosas
         </Text>
         <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
           <MyButton
