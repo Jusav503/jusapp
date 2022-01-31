@@ -1,32 +1,48 @@
 import { FontAwesome } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
+import { openURL } from "expo-linking";
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-interface buttonProps{
-    title: string;
-    colorTitle: string;
-    FontAwesomeIcon: string;
-    colorIcon: string;
-    backgroundColor: string
+interface buttonProps {
+  link: string;
+  title: string;
+  colorTitle: string;
+  FontAwesomeIcon: string;
+  colorIcon: string;
+  backgroundColor: any[];
 }
 
-const MyButton = (props:buttonProps) => {
+const MyButton = (props: buttonProps) => {
   return (
-    <View style={[styles.buttonContainer, {backgroundColor: props.backgroundColor}]}>
-      <FontAwesome name={props.FontAwesomeIcon} size={24} color={props.colorIcon} />
-      <Text style={[styles.buttonText, {color: props.colorTitle}]}>{props.title}</Text>
-    </View>
+    <TouchableOpacity onPress={() => openURL(props.link)}>
+      <LinearGradient
+        style={styles.container}
+        colors={props.backgroundColor}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 0, y: 1 }}
+      >
+        <FontAwesome
+          name={props.FontAwesomeIcon}
+          size={24}
+          color={props.colorIcon}
+        />
+        <Text style={[styles.buttonText, { color: props.colorTitle }]}>
+          {props.title}
+        </Text>
+      </LinearGradient>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    flexDirection: "row",
+  container: {
     width: "100%",
-    padding: 10,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 10,
+    flexDirection: "row",
+    borderRadius: 15,
+    padding: 10,
   },
   buttonText: {
     fontWeight: "bold",

@@ -1,7 +1,7 @@
 import { Video } from "expo-av";
 import { openURL } from "expo-linking";
 import React from "react";
-import { Image, ScrollView, Text, View, TouchableOpacity } from "react-native";
+import { Image, ScrollView, Text, View, Pressable } from "react-native";
 
 import ImageCarousel from "../components/ImageCarousel";
 import MyButton from "../components/MyButton";
@@ -12,7 +12,7 @@ const ExperienceScreen = () => {
   const video = React.useRef(null);
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.cardContainer}>
+      {/* <View style={styles.cardContainer}>
         <View style={{ flexDirection: "row" }}>
           <Image
             source={require("../assets/images/foto.jpg")}
@@ -57,15 +57,16 @@ const ExperienceScreen = () => {
           He realizado "features" como las de algunas aplicaciones móviles, por ejemplo: likes dinamicos como los de Twitter o TikTok, el poder
           mostrar listas de reproducción (almacenadas en AWS amplify) reproducir o pausar una canción, mostrar la barra de progreso de la canción como en Spotify... También he realizado una amplia replica de UI's de algunas aplicaciones tales como: Netflix, Tesla, WhatsApp, Amazon y TikTok.
         </Text>
-        <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
+        <Pressable onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
           <MyButton
             FontAwesomeIcon="github"
             colorIcon="white"
             title="Jusav503"
             colorTitle="white"
-            backgroundColor="#171B22"
+            // backgroundColor="#171B22"
+            backgroundColor={["#46aeff", "#5884ff"]}
           />
-        </TouchableOpacity>
+        </Pressable>
       </View>
 
       <View style={styles.cardContainer}>
@@ -83,16 +84,16 @@ const ExperienceScreen = () => {
         <Text style={styles.text}>
           Creación del juego Tic-tac-toe, usando el metodo "map()" para posicionar las equis y circulos. 
         </Text>
-        <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
+        <Pressable onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
           <MyButton
             FontAwesomeIcon="github"
             colorIcon="white"
             title="Jusav503"
             colorTitle="white"
-            backgroundColor="#171B22"
+            backgroundColor={["#46aeff", "#5884ff"]}
           />
-        </TouchableOpacity>
-      </View>
+        </Pressable>
+      </View> */}
 
       <View style={styles.cardContainer}>
         <View style={{ flexDirection: "row" }}>
@@ -109,15 +110,16 @@ const ExperienceScreen = () => {
         <Text style={styles.text}>
           Uso de API "Coingecko" para mostrar nombre de las criptomonedas, precio, gráfica entre otras cosas
         </Text>
-        <TouchableOpacity onPress={() => openURL("https://github.com/Jusav503?tab=repositories")} >
+        
           <MyButton
             FontAwesomeIcon="github"
             colorIcon="white"
             title="Jusav503"
             colorTitle="white"
-            backgroundColor="#171B22"
+            backgroundColor={["#46aeff", "#5884ff"]}
+            link="https://github.com/Jusav503?tab=repositories"
           />
-        </TouchableOpacity>
+        
       </View>
     </ScrollView>
   );
