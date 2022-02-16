@@ -38,7 +38,7 @@ const SkillsScreen = () => {
         <View style={{ flexDirection: "row" }}>
           <Image
             source={{
-              uri: "https://media-exp1.licdn.com/dms/image/C4D03AQGOJEDGFZpuCg/profile-displayphoto-shrink_800_800/0/1516867329561?e=1643846400&v=beta&t=S83-svgl-R0PzBFL6LCMqHvb9QPDTEsmHe89j0pp_pA",
+              uri: "https://media-exp1.licdn.com/dms/image/C4D03AQGOJEDGFZpuCg/profile-displayphoto-shrink_200_200/0/1516867329561?e=1648684800&v=beta&t=JnvvhF2lqEZHDTBdHNOyPdB_ABy5YDwZgJjJit3GUx8",
             }}
             style={styles.cardAvatar}
           />

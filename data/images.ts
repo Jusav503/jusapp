@@ -11,6 +11,7 @@ export default {
   ],
   jusavcoin:[
     "https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin2.jpg",
-    "https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin.jpg"
+    "https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin.jpg",
+    "https://jusapp.s3.eu-central-1.amazonaws.com/jusavcoin3.jpg",
   ]
 };

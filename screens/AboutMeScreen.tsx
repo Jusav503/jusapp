@@ -23,7 +23,7 @@ const AboutMeScreen = () => {
             ¡Hey! Soy Justice Velasco, nací el 28 de agosto del 2002 en San
             Salvador, El Salvador. El amor por los ordenadores y la tecnología
             comenzó a los 6 años de edad, ya que, a esa edad mi padre era dueño
-            de un "Cyber Cafe" donde yo pasaba horas descubriendo el mundo del
+            de un Ciber, ciber donde yo pasaba horas frente al ordenador descubriendo el mundo del
             internet.
           </Text>
         </View>
