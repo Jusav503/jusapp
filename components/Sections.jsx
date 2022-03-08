@@ -4,12 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import Colors from "../constants/Colors";
 
-interface SectionProps {
-  title: string;
-  FontAwesome5Icon: string;
-}
-
-const Sections = (props: SectionProps) => {
+const Sections = (props) => {
 
   return (
     <View style={styles.container} >
