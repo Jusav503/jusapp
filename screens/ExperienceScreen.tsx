@@ -1,11 +1,9 @@
-import { Video } from "expo-av";
 import React from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { ScrollView, } from "react-native";
+
 import CardCarrouselImage from "../components/CardCarrouselImage";
 import CardImage from "../components/CardImage";
 import CardComponent from "../components/CardVideoComponent";
-
-import ImageCarousel from "../components/ImageCarousel";
 import MyButton from "../components/MyButton";
 import images from "../data/images";
 import styles from "./styles";
